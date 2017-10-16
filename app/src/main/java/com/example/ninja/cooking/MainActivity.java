@@ -6,6 +6,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView textInput;
     private TextView textCreate;
     private TextView textFavorites;
+    private EditText ingredientField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         textInput = (TextView) findViewById(R.id.text_input);
         textCreate = (TextView) findViewById(R.id.text_create);
         textFavorites = (TextView) findViewById(R.id.text_favorites);
+//        ingredientField = (EditText) findViewById(R.id.)
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView)
                 findViewById(R.id.bottom_navigation);
@@ -41,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                                 textInput.setVisibility(View.GONE);
                                 textCreate.setVisibility(View.GONE);
                                 textFavorites.setVisibility(View.GONE);
+
                                 break;
                             case R.id.action_searchDatabase:
                                 textRecipes.setVisibility(View.GONE);
