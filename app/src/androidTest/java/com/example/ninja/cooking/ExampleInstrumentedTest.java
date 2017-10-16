@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.ninja.cooking", appContext.getPackageName());
+        assertEquals("bottomnav.hitherejoe.com.bottomnavigationsample", appContext.getPackageName());
     }
 }
