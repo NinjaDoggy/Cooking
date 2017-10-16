@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Bottom Navigation Sample</string>
 
+    <string name="text_recipeDatabase">Recipes</string>
+    <string name="text_searchDatabase">Search</string>
+    <string name="text_input">Input</string>
+    <string name="text_create">Create</string>
     <string name="text_favorites">Favorites</string>
-    <string name="text_schedules">Schedules</string>
-    <string name="text_music">Music</string>
 </resources>

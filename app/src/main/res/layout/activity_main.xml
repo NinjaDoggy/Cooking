@@ -5,26 +5,41 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/text_recipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/text_recipeDatabase" />
+
+    <TextView
+        android:id="@+id/text_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/text_searchDatabase"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/text_input"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/text_create"
+        android:visibility="gone" />
+    <TextView
         android:id="@+id/text_favorites"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/text_favorites" />
-
-    <TextView
-        android:id="@+id/text_schedules"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/text_schedules"
-        android:visibility="gone" />
-
-    <TextView
-        android:id="@+id/text_music"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/text_music"
+        android:text="@string/text_favorites"
         android:visibility="gone" />
 
     <android.support.design.widget.BottomNavigationView
