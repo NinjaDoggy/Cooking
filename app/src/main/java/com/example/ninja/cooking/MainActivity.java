@@ -34,48 +34,49 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.bottom_navigation);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(
-                new BottomNavigationView.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                        switch (item.getItemId()) {
-                            case R.id.action_recipeDatabase:
-                                textRecipes.setVisibility(View.VISIBLE);
-                                textSearch.setVisibility(View.GONE);
-                                textInput.setVisibility(View.GONE);
-                                textCreate.setVisibility(View.GONE);
-                                textFavorites.setVisibility(View.GONE);
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    switch (item.getItemId()) {
+                        case R.id.action_recipeDatabase:
+                            textRecipes.setVisibility(View.VISIBLE);
+                            textSearch.setVisibility(View.GONE);
+                            textInput.setVisibility(View.GONE);
+                            textCreate.setVisibility(View.GONE);
+                            textFavorites.setVisibility(View.GONE);
 
-                                break;
-                            case R.id.action_searchDatabase:
-                                textRecipes.setVisibility(View.GONE);
-                                textSearch.setVisibility(View.VISIBLE);
-                                textInput.setVisibility(View.GONE);
-                                textCreate.setVisibility(View.GONE);
-                                textFavorites.setVisibility(View.GONE);
-                                break;
-                            case R.id.action_input:
-                                textRecipes.setVisibility(View.GONE);
-                                textSearch.setVisibility(View.GONE);
-                                textInput.setVisibility(View.VISIBLE);
-                                textCreate.setVisibility(View.GONE);
-                                textFavorites.setVisibility(View.GONE);
-                                break;
-                            case R.id.action_create:
-                                textRecipes.setVisibility(View.GONE);
-                                textSearch.setVisibility(View.GONE);
-                                textInput.setVisibility(View.GONE);
-                                textCreate.setVisibility(View.VISIBLE);
-                                textFavorites.setVisibility(View.GONE);
-                                break;
-                            case R.id.action_favorites:
-                                textRecipes.setVisibility(View.GONE);
-                                textSearch.setVisibility(View.GONE);
-                                textInput.setVisibility(View.GONE);
-                                textCreate.setVisibility(View.GONE);
-                                textFavorites.setVisibility(View.VISIBLE);
-                        }
-                        return false;
+                            break;
+                        case R.id.action_searchDatabase:
+                            textRecipes.setVisibility(View.GONE);
+                            textSearch.setVisibility(View.VISIBLE);
+                            textInput.setVisibility(View.GONE);
+                            textCreate.setVisibility(View.GONE);
+                            textFavorites.setVisibility(View.GONE);
+                            break;
+                        case R.id.action_input:
+                            textRecipes.setVisibility(View.GONE);
+                            textSearch.setVisibility(View.GONE);
+                            textInput.setVisibility(View.VISIBLE);
+                            textCreate.setVisibility(View.GONE);
+                            textFavorites.setVisibility(View.GONE);
+                            break;
+                        case R.id.action_create:
+                            textRecipes.setVisibility(View.GONE);
+                            textSearch.setVisibility(View.GONE);
+                            textInput.setVisibility(View.GONE);
+                            textCreate.setVisibility(View.VISIBLE);
+                            textFavorites.setVisibility(View.GONE);
+                            break;
+                        case R.id.action_favorites:
+                            textRecipes.setVisibility(View.GONE);
+                            textSearch.setVisibility(View.GONE);
+                            textInput.setVisibility(View.GONE);
+                            textCreate.setVisibility(View.GONE);
+                            textFavorites.setVisibility(View.VISIBLE);
                     }
-                });
+                    return false;
+                }
+            }
+        );
     }
 }
