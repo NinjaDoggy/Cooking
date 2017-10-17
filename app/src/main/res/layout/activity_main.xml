@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="10px"
     android:paddingRight="10px">
-
+    //INGREDIENTS INPUT
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,14 +15,52 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:inputType="text"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Ingredient"
+        android:layout_toRightOf="@+id/plain_text_input"/>
 
+    //CATALOG DISPLAY
+
+    //FOOD DISPLAY
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:padding="20px">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        //food name?
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME OF FOOD"/>
+
+        //food description and nutritional information?
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOOD DESC AND NUTRITIONAL INFO"/>
+
+        //steps to take
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:text="AND THIS IS HOW YOU MAKE THE FOOD!! :D"/>
+    </LinearLayout>
+
+    //TEST OUTPUTS!! WILL NOT BE PRESENT IN FINAL CHANGES!!!
     <TextView
         android:id="@+id/text_recipes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="@string/text_recipeDatabase" />
-
     <TextView
         android:id="@+id/text_search"
         android:layout_width="wrap_content"
