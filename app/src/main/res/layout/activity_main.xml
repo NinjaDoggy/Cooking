@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="10px"
     android:paddingRight="10px">
+
     //INGREDIENTS INPUT
     <TextView
         android:layout_width="wrap_content"
@@ -26,46 +27,53 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Item 1"/>
-        <ImageView
+
+            <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
+        </LinearLayout>
 
     </ScrollView>
-    //FOOD DISPLAY
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_centerVertical="true"
-        android:padding="20px">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
-
-        //food name?
-        <TextView
+        //FOOD DISPLAY
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NAME OF FOOD"/>
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:padding="20px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
-        //food description and nutritional information?
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FOOD DESC AND NUTRITIONAL INFO"/>
 
-        //steps to take
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-            android:text="AND THIS IS HOW YOU MAKE THE FOOD!! :D"/>
-    </LinearLayout>
+            //food name?
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME OF FOOD"/>
+
+            //food description and nutritional information?
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOOD DESC AND NUTRITIONAL INFO"/>
+
+            //steps to take
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AND THIS IS HOW YOU MAKE THE FOOD!! :D"/>
+        </LinearLayout>
 
     //TEST OUTPUTS!! WILL NOT BE PRESENT IN FINAL CHANGES!!!
     <TextView

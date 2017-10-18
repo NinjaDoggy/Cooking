@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                             textInput.setVisibility(View.GONE);
                             textCreate.setVisibility(View.GONE);
                             textFavorites.setVisibility(View.GONE);
-
                             break;
                         case R.id.action_searchDatabase:
                             textRecipes.setVisibility(View.GONE);
@@ -73,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                             textInput.setVisibility(View.GONE);
                             textCreate.setVisibility(View.GONE);
                             textFavorites.setVisibility(View.VISIBLE);
+                            break;
                     }
                     return false;
                 }
@@ -80,3 +80,6 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 }
+
+
+
